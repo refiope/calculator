@@ -48,7 +48,7 @@ let calculate = function (string) {
 		{
 			if (operatorArray.includes("*") && operatorArray.includes("/"))
 			{
-				if (operatorArray.findIndex("*") < operatorArray.findIndex("/"))
+				if (operatorArray.indexOf("*") < operatorArray.indexOf("/"))
 				{
 					let n = operatorArray.indexOf("*");
 					let result = multiply(numberArray[n],numberArray[n+1]);
